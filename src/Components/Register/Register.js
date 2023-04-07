@@ -21,7 +21,7 @@ function Register() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:7000/users";
+			const url = "https://server-gmail-new2.onrender.com/users";
 			const { data: res } = await axios.post(url, data);
 			navigate("/");
 			console.log(res.message);

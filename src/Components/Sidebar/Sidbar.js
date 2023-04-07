@@ -36,7 +36,7 @@ function Sidbar() {
 
    const sendMail = async (e) => {
         e.preventDefault()
-        const url = "http://localhost:7000/api/mail/";
+        const url = "https://server-gmail-new2.onrender.com/api/mail/";
         const { data: res } = await axios.post(url, data);
         navigate("/home");
         console.log(res.message);

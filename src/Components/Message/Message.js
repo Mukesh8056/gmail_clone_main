@@ -7,7 +7,7 @@ function Message() {
     const [mail, setMail] = useState("")
 
     useEffect(() => {
-        axios('http://localhost:7000/api/mail/', { method: 'GET' })
+        axios('https://server-gmail-new2.onrender.com/api/mail/', { method: 'GET' })
         .then((response) => response.data.e)
           .then((data) => {
             console.log(data[0]);
